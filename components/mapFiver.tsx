@@ -1,5 +1,5 @@
 import * as React from "react";
-import styles from "../styles/map.module.css";
+import styles from "../styles/Map.module.css";
 
 type MapProps = {
   onClick: (e: React.MouseEvent<SVGPathElement, MouseEvent>) => void;

@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from "react";
-import styles from "../../styles/territory.module.css";
+import styles from "../../styles/Territory.module.css";
 import { TerritoryData } from "./territoriesData";
 import TerritoryContent from "./territoryContent";
 

@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from "react";
-import styles from "../styles/profile.module.css";
+import styles from "../styles/Profile.module.css";
 
 type ProfileProps = {
   address?: string;
