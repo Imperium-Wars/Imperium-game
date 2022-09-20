@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { Modal, useMediaQuery } from "@mui/material";
 import React, { FunctionComponent } from "react";
-import styles from "../../styles/territory.module.css";
+import styles from "../../styles/territories.module.css";
 import { TerritoryData } from "./territoriesData";
 import TerritoryContent from "./territoryContent";
 

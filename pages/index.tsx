@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import { useRouter } from "next/router";
 import Button from "../components/UI/button";
-import styles from "../styles/home.module.css";
+import styles from "../styles/index.module.css";
 
 const Home: NextPage = () => {
   const router = useRouter();

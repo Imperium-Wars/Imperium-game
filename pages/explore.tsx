@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Map from "../components/mapFiver";
-import styles from "../styles/map.module.css";
+import styles from "../styles/mapFiver.module.css";
 import Territory from "../components/Territories/territory";
 import MobileTerritory from "../components/Territories/mobileTerritory";
 import { useMediaQuery } from "@mui/material";
