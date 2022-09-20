@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from "react";
-import styles from "../../styles/Button.module.css";
+import styles from "../../styles/button.module.css";
 
 type ButtonProps = {
   onClick: () => void;
