@@ -1,5 +1,5 @@
 import * as React from "react";
-import styles from "../styles/mapFiver.module.css";
+import styles from "../styles/map.module.css";
 
 type MapProps = {
   onClick: (e: React.MouseEvent<SVGPathElement, MouseEvent>) => void;
@@ -14,7 +14,6 @@ const SvgComponent: React.FunctionComponent<MapProps> = ({ onClick }) => (
       textRendering: "geometricPrecision",
       fillRule: "evenodd",
       clipRule: "evenodd",
-      overflow: "visible",
     }}
     className={styles.svg}
   >

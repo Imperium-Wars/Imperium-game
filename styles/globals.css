@@ -2,9 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  cursor: url("../public/cursorPointer.png"), pointer;
+  font-family: "CaslonBold";
+  cursor: url("../public/cursors/cursorPointer.png"), pointer;
 }
 
 :root {
@@ -60,12 +59,19 @@ a {
   width: 100%;
 }
 
-h1 {
-  color: blanchedalmond;
-}
-
 p {
   color: var(--beige);
+}
+
+#info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: blanchedalmond;
 }
 
 /* Map */

@@ -32,6 +32,7 @@
 
 .countryName {
   text-align: center;
+  color: blanchedalmond;
 }
 
 .territoryContainer {
@@ -86,7 +87,7 @@
   right: 12px;
   width: 32px;
   stroke: var(--beige);
-  cursor: url("../public/cursorPointer.png"), pointer;
+  cursor: url("../public/cursors/cursorPointer.png"), pointer;
   transition: 0.3s;
   background-color: transparent;
   border: none;

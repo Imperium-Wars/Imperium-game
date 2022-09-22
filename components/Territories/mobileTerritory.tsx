@@ -52,7 +52,7 @@ const MobileTerritory: FunctionComponent<MobileTerritoryProps> = ({
             />
             <img
               className={styles.mobileTerritoryCadre}
-              src="/squareCadre.webp"
+              src="/frames/territoryFrame.webp"
               width={273}
               alt="territory image"
             />

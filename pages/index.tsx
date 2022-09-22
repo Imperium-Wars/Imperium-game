@@ -12,7 +12,7 @@ const Home: NextPage = () => {
         <div className="centerContainer">
           <h1 className={styles.homeTitle}>Imperium Wars</h1>
           <Button onClick={() => router.push("/explore")}>
-            EXPLORE THE MAP
+            Explore the map
           </Button>
         </div>
       </div>
