@@ -10,17 +10,25 @@ import TerritoriesData from "../components/Territories/territoriesData";
 import ScreenRotationIcon from "@mui/icons-material/ScreenRotation";
 import MusicPlayer from "../components/UI/musicPlayer";
 
+export type Music = {
+  song?: HTMLAudioElement;
+  songName: string;
+};
+
 const Explore: NextPage = () => {
   const isScreenSmall = useMediaQuery("(max-width:1024px)");
   const isScreenMobilePortrait = useMediaQuery("(max-width:500px)");
   const [territory, setTerritory] = useState<TerritoryKey>("China");
   const [territoryModal, setTerritoryModal] = useState(false);
-  const [audio, setAudio] = useState<HTMLAudioElement | undefined>(undefined);
+  const [music, setMusic] = useState<Music | undefined>(undefined);
 
   useEffect(() => {
-    setAudio(
-      new Audio("https://imperium-game.vercel.app/music/ValseSentimentale.mp3")
-    ); // only call client
+    setMusic({
+      song: new Audio(
+        "https://imperium-game.vercel.app/music/ValseSentimentale.mp3"
+      ),
+      songName: "Valse Sentimentale | Tchaikovsky",
+    }); // only call client
   }, []);
 
   function onClick(e: any) {
@@ -54,7 +62,7 @@ const Explore: NextPage = () => {
           <Map onClick={onClick} />
         )}
       </div>
-      <MusicPlayer music={audio} />
+      <MusicPlayer music={music} />
     </div>
   );
 };

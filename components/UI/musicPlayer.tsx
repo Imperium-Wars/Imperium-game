@@ -1,10 +1,11 @@
-import React, { FunctionComponent, useState } from "react";
+import React, { FunctionComponent, useEffect, useState } from "react";
 import styles from "../../styles/musicPlayer.module.css";
 import MusicNoteIcon from "@mui/icons-material/MusicNote";
 import MusicOffIcon from "@mui/icons-material/MusicOff";
+import { Music } from "../../pages/explore";
 
 type MusicPlayerProps = {
-  music?: HTMLAudioElement;
+  music?: Music;
 };
 
 const MusicPlayer: FunctionComponent<MusicPlayerProps> = ({ music }) => {
@@ -13,23 +14,23 @@ const MusicPlayer: FunctionComponent<MusicPlayerProps> = ({ music }) => {
 
   function setMusicOnFunction(): void {
     setMusicOn(true);
-    music?.play();
+    music?.song?.play();
   }
 
   function setMusicOffFunction(): void {
     setMusicOn(false);
-    music?.pause();
+    music?.song?.pause();
   }
 
   return isMusicOn ? (
     <div
       className={styles.musicPlayerOn}
-      onClick={setMusicOffFunction}
       onMouseEnter={() => setIsMusicOnHover(true)}
       onMouseLeave={() => setIsMusicOnHover(false)}
+      onClick={setMusicOffFunction}
     >
       {isMusicOnHover ? (
-        <p className={styles.musicTitle}>Valse Sentimentale | Tchaikovsky</p>
+        <p className={styles.musicTitle}>{music?.songName}</p>
       ) : null}
       <MusicNoteIcon sx={{ color: "blanchedalmond" }} />
     </div>
