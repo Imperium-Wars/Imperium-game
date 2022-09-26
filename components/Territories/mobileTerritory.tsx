@@ -44,8 +44,11 @@ const MobileTerritory: FunctionComponent<MobileTerritoryProps> = ({
               className={styles.mobileTerritoryImage}
               src={
                 territory?.isAtWar
-                  ? `/territories/${territory.name.replace(" ", "")}War.webp`
-                  : `/territories/${territory.name.replace(" ", "")}Peace.webp`
+                  ? `/territories/war/${territory.name.replace(/\s/g, "")}.webp`
+                  : `/territories/peace/${territory.name.replace(
+                      /\s/g,
+                      ""
+                    )}.webp`
               }
               width={204}
               alt="territory image"

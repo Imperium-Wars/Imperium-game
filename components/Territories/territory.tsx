@@ -13,8 +13,8 @@ const Territory: FunctionComponent<TerritoryProps> = ({ territory }) => {
       className={styles.territory}
       style={{
         backgroundImage: territory?.isAtWar
-          ? `url(/territories/${territory.name.replace(" ", "")}War.webp)`
-          : `url(/territories/${territory.name.replace(" ", "")}Peace.webp)`,
+          ? `url(/territories/war/${territory.name.replace(/\s/g, "")}.webp)`
+          : `url(/territories/peace/${territory.name.replace(/\s/g, "")}.webp)`,
       }}
     >
       <div className={styles.blackFilter}></div>

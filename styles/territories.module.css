@@ -67,7 +67,7 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  box-shadow: 0px 0px 32px 1px #140b057e;
+  box-shadow: 0px 0px 32px 1px hsla(24, 60%, 5%, 0.494);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
