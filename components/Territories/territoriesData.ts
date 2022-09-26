@@ -32,7 +32,7 @@ export type TerritoryKey =
   | "Scandinavia"
   | "Greenland"
   | "Iceland"
-  | "Northern Europe"
+  | "Central Europe"
   | "Southern Europe"
   | "Ural"
   | "Eykar"
@@ -55,7 +55,6 @@ export type TerritoryKey =
   | "Irkutsk"
   | "Mongolia"
   | "New Zeland"
-  | "Mongolia"
   | "New Guinea"
   | "Western Australia"
   | "Eastern Australia"
@@ -79,12 +78,12 @@ type TerritoriesData = {
 
 const territoriesData: TerritoriesData = {
   Afghanistan: {
-    apogee: "1489 - 1914",
+    apogee: "1206 - 1368",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
+      "The mongolian empire is the second largest empire in history. The mongol army ruled with an iron fist by Gengis Khan defeated all their enemies by counting on their special abilities in cavalry and archery.",
     isAtWar: false,
-    name: "Afghanistan",
+    name: "Mongolia",
     type: "Mountain",
   },
   Alaska: {
@@ -184,31 +183,31 @@ const territoriesData: TerritoriesData = {
     type: "Game",
   },
   "Great Britain": {
-    apogee: "1489 - 1914",
-    continent: "Asia",
+    apogee: "1707 - 1914",
+    continent: "Europe",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
+      "The British Empire was the largest empires of history and made Great Britain the superpower of the 19th century. Their mastery of oceans and their quick modernization permitted them to conquer lands all around the world from Oceania to America and then to Asia.",
     isAtWar: false,
     name: "Great Britain",
-    type: "Mountain",
+    type: "Plain",
   },
   Greenland: {
-    apogee: "1489 - 1914",
-    continent: "Asia",
+    apogee: "793 - 1066",
+    continent: "Europe",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
+      "The Viking Age was the period during the Middle Ages when Norsemen known as Vikings undertook large-scale raiding, colonizing, conquest, and trading throughout Europe and reached North America. Well known for their ferocity they were also excellent navigators and very good merchants.",
     isAtWar: false,
     name: "Greenland",
-    type: "Mountain",
+    type: "Desert",
   },
   Iceland: {
-    apogee: "1489 - 1914",
-    continent: "Asia",
+    apogee: "793 - 1066",
+    continent: "Europe",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
+      "The Viking Age was the period during the Middle Ages when Norsemen known as Vikings undertook large-scale raiding, colonizing, conquest, and trading throughout Europe and reached North America. Well known for their ferocity they were also excellent navigators and very good merchants.",
     isAtWar: false,
     name: "Iceland",
-    type: "Mountain",
+    type: "Desert",
   },
   India: {
     apogee: "1489 - 1914",
@@ -247,10 +246,10 @@ const territoriesData: TerritoriesData = {
     type: "Mountain",
   },
   Kamchatka: {
-    apogee: "1489 - 1914",
-    continent: "Asia",
+    apogee: "1721 - 1905",
+    continent: "Europe",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
+      "The conquests of Peter I and Catherine the Great made The Russian Empire the third largest empire of History. Imperial soldier's brutality and mastery of the terrain allowed them to prevail over the most powerful enemies, however imperial power declines after the first Russian Revolution in 1905.",
     isAtWar: false,
     name: "Kamchatka",
     type: "Mountain",
@@ -274,19 +273,19 @@ const territoriesData: TerritoriesData = {
     type: "Mountain",
   },
   "Middle East": {
-    apogee: "1489 - 1914",
+    apogee: "1400 - 1600",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
+      "The Middle East had its hour of glory at the end of the Middle Age thanks to the conquests of Mehmed 2 and Suleiman the Magnificent, after the 16th century the Ottoman Empire did not modernize enough and slowly declined to completely lose its influence after World War I.",
     isAtWar: false,
     name: "Middle East",
-    type: "Mountain",
+    type: "Desert",
   },
   Mongolia: {
-    apogee: "1489 - 1914",
+    apogee: "1206 - 1368",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
+      "The Mongolian empire is the second largest empire in history. The mongol army ruled with an iron fist by Gengis Khan defeated all their enemies by counting on their special abilities in cavalry and archery.",
     isAtWar: false,
     name: "Mongolia",
     type: "Mountain",
@@ -302,7 +301,7 @@ const territoriesData: TerritoriesData = {
   },
   "Northern Africa": {
     apogee: "1489 - 1914",
-    continent: "Asia",
+    continent: "Europe",
     history:
       "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
@@ -318,14 +317,14 @@ const territoriesData: TerritoriesData = {
     name: "Northern Canada",
     type: "Mountain",
   },
-  "Northern Europe": {
-    apogee: "1489 - 1914",
-    continent: "Asia",
+  "Central Europe": {
+    apogee: "1871 – 1918",
+    continent: "Europe",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
+      "Central Europe led by Prussia and the German Empire were able to lead Europe as one of the most powerful empire after Napoleon's defeat. However the empire was dismantled after the defeat of the first world war.",
     isAtWar: false,
-    name: "Northern Europe",
-    type: "Mountain",
+    name: "Central Europe",
+    type: "Plain",
   },
   Ontario: {
     apogee: "1489 - 1914",
@@ -355,28 +354,28 @@ const territoriesData: TerritoriesData = {
     type: "Mountain",
   },
   Russia: {
-    apogee: "1489 - 1914",
-    continent: "Asia",
+    apogee: "1721 - 1905",
+    continent: "Europe",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
+      "The conquests of Peter I and Catherine the Great made The Russian Empire the third largest empire of History. Imperial soldier's brutality and mastery of the terrain allowed them to prevail over the most powerful enemies, however imperial power declines after the first Russian Revolution in 1905.",
     isAtWar: false,
     name: "Russia",
     type: "Mountain",
   },
   Scandinavia: {
-    apogee: "1489 - 1914",
-    continent: "Asia",
+    apogee: "793 - 1066",
+    continent: "Europe",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
+      "The Viking Age was the period during the Middle Ages when Norsemen known as Vikings undertook large-scale raiding, colonizing, conquest, and trading throughout Europe and reached North America. Well known for their ferocity they were also excellent navigators and very good merchants.",
     isAtWar: false,
     name: "Scandinavia",
     type: "Mountain",
   },
   Siberia: {
-    apogee: "1489 - 1914",
-    continent: "Asia",
+    apogee: "1721 - 1905",
+    continent: "Europe",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
+      "The conquests of Peter I and Catherine the Great made The Russian Empire the third largest empire of History. Imperial soldier's brutality and mastery of the terrain allowed them to prevail over the most powerful enemies, however imperial power declines after the first Russian Revolution in 1905.",
     isAtWar: false,
     name: "Siberia",
     type: "Mountain",
@@ -400,18 +399,19 @@ const territoriesData: TerritoriesData = {
     type: "Mountain",
   },
   "Southern Europe": {
-    apogee: "-27 - 476",
-    continent: "Asia",
-    history: "Southern Europe ",
+    apogee: "-27 - 350",
+    continent: "Europe",
+    history:
+      "Southern Europe was covered by glory during the golden age of the Roman Empire and ancient greece. Julius Caesar and his successors could count on one of the best armies of history, Romans warriors were excellent in every aspect of war, their training and equipment were ahead of their time.",
     isAtWar: false,
     name: "Southern Europe",
-    type: "Mountain",
+    type: "Plain",
   },
   Ural: {
-    apogee: "1489 - 1914",
-    continent: "Asia",
+    apogee: "1721 - 1905",
+    continent: "Europe",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
+      "The conquests of Peter I and Catherine the Great made The Russian Empire the third largest empire of History. Imperial soldier's brutality and mastery of the terrain allowed them to prevail over the most powerful enemies, however imperial power declines after the first Russian Revolution in 1905.",
     isAtWar: false,
     name: "Ural",
     type: "Mountain",
@@ -435,10 +435,10 @@ const territoriesData: TerritoriesData = {
     type: "Mountain",
   },
   "Western Europe": {
-    apogee: "1489 - 1914",
+    apogee: "1489 - 1815",
     continent: "Europe",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
+      "Western Europeans (Including French, Spanish and Portuguese) started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1815 after Napoleon's defeat.",
     isAtWar: false,
     name: "Western Europe",
     type: "Plain",
@@ -453,10 +453,10 @@ const territoriesData: TerritoriesData = {
     type: "Mountain",
   },
   Yakutsk: {
-    apogee: "1489 - 1914",
-    continent: "Asia",
+    apogee: "1721 - 1905",
+    continent: "Europe",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
+      "The conquests of Peter I and Catherine the Great made The Russian Empire the third largest empire of History. Imperial soldier's brutality and mastery of the terrain allowed them to prevail over the most powerful enemies, however imperial power declines after the first Russian Revolution in 1905.",
     isAtWar: false,
     name: "Yakutsk",
     type: "Mountain",
