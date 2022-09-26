@@ -1,4 +1,10 @@
-type TerritoryType = "Forest" | "Rainforest" | "Desert" | "Plain" | "Mountain";
+type TerritoryType =
+  | "Forest"
+  | "Rainforest"
+  | "Desert"
+  | "Plain"
+  | "Mountain"
+  | "Game";
 
 type Continent =
   | "Asia"
@@ -60,10 +66,10 @@ export type TerritoryKey =
 
 export type TerritoryData = {
   name: TerritoryKey;
-  type: TerritoryType;
-  apogee: string;
+  type?: TerritoryType;
+  apogee?: string;
   history: string;
-  continent: Continent;
+  continent?: Continent;
   isAtWar?: boolean;
 };
 
@@ -76,7 +82,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Afghanistan",
     type: "Mountain",
@@ -85,7 +91,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Alaska",
     type: "Mountain",
@@ -94,7 +100,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Alberta",
     type: "Mountain",
@@ -103,7 +109,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Argentina",
     type: "Mountain",
@@ -112,7 +118,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Brazil",
     type: "Mountain",
@@ -121,7 +127,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Central Africa",
     type: "Mountain",
@@ -138,7 +144,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Eastern Africa",
     type: "Mountain",
@@ -147,7 +153,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Eastern Australia",
     type: "Mountain",
@@ -156,7 +162,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Eastern United States",
     type: "Mountain",
@@ -165,25 +171,23 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Egypt",
     type: "Mountain",
   },
   Eykar: {
-    apogee: "1489 - 1914",
-    continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Eykar is a fantasy universe where history has yet to be written. An open source smartcontract dictates the rules of this world: how fast time passes, how you can move, how you can form an army, and so on.",
     isAtWar: false,
     name: "Eykar",
-    type: "Mountain",
+    type: "Game",
   },
   "Great Britain": {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Great Britain",
     type: "Mountain",
@@ -192,7 +196,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Greenland",
     type: "Mountain",
@@ -201,7 +205,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Iceland",
     type: "Mountain",
@@ -210,7 +214,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "India",
     type: "Mountain",
@@ -219,7 +223,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Indonesia",
     type: "Mountain",
@@ -228,7 +232,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Irkutsk",
     type: "Mountain",
@@ -237,7 +241,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Japan",
     type: "Mountain",
@@ -246,7 +250,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Kamchatka",
     type: "Mountain",
@@ -255,7 +259,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Madagascar",
     type: "Mountain",
@@ -264,7 +268,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Central America",
     type: "Mountain",
@@ -273,7 +277,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Middle East",
     type: "Mountain",
@@ -282,7 +286,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Mongolia",
     type: "Mountain",
@@ -291,7 +295,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "New Guinea",
     type: "Mountain",
@@ -300,7 +304,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Northern Africa",
     type: "Mountain",
@@ -309,7 +313,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Northern Canada",
     type: "Mountain",
@@ -318,7 +322,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Northern Europe",
     type: "Mountain",
@@ -327,7 +331,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Ontario",
     type: "Mountain",
@@ -336,7 +340,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Peru",
     type: "Mountain",
@@ -345,7 +349,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Quebec",
     type: "Mountain",
@@ -354,7 +358,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Russia",
     type: "Mountain",
@@ -363,7 +367,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Scandinavia",
     type: "Mountain",
@@ -372,7 +376,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Siberia",
     type: "Mountain",
@@ -381,7 +385,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "South Africa",
     type: "Mountain",
@@ -390,16 +394,15 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Southeast Asia",
     type: "Mountain",
   },
   "Southern Europe": {
-    apogee: "1489 - 1914",
+    apogee: "-27 - 476",
     continent: "Asia",
-    history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+    history: "Southern Europe ",
     isAtWar: false,
     name: "Southern Europe",
     type: "Mountain",
@@ -408,7 +411,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Ural",
     type: "Mountain",
@@ -417,7 +420,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Venezuela",
     type: "Mountain",
@@ -426,7 +429,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Western Australia",
     type: "Mountain",
@@ -435,7 +438,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Europe",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Western Europe",
     type: "Plain",
@@ -444,7 +447,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Western United States",
     type: "Mountain",
@@ -453,7 +456,7 @@ const territoriesData: TerritoriesData = {
     apogee: "1489 - 1914",
     continent: "Asia",
     history:
-      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914",
+      "Western Europeans started their apogee after the discovery of America and the beginning of colonization. Their technical advance and organizational superiority allowed them to conquer the world until the beginning of their decline in 1914.",
     isAtWar: false,
     name: "Yakutsk",
     type: "Mountain",

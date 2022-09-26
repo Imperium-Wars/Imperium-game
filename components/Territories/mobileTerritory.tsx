@@ -61,12 +61,18 @@ const MobileTerritory: FunctionComponent<MobileTerritoryProps> = ({
             />
           </div>
           <div className={styles.mobileTerritoryContent}>
-            <TerritoryContent title="Continent" text={territory.continent} />
-            <TerritoryContent title="Territory type" text={territory.type} />
-            <TerritoryContent
-              title="Territory apogee"
-              text={territory.apogee}
-            />
+            {territory.continent ? (
+              <TerritoryContent title="Continent" text={territory.continent} />
+            ) : null}
+            {territory.type ? (
+              <TerritoryContent title="Territory type" text={territory.type} />
+            ) : null}
+            {territory.apogee ? (
+              <TerritoryContent
+                title="Territory apogee"
+                text={territory.apogee}
+              />
+            ) : null}
             <TerritoryContent title="History" text={territory.history} />
           </div>
         </div>
