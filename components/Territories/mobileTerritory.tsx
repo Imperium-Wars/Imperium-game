@@ -16,8 +16,6 @@ const MobileTerritory: FunctionComponent<MobileTerritoryProps> = ({
   isOpen,
   onClose,
 }) => {
-  const isScreenSmall = useMediaQuery("(max-width:1024px)");
-
   return (
     <Modal
       disableAutoFocus

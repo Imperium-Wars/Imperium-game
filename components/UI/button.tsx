@@ -1,9 +1,9 @@
-import React, { FunctionComponent } from "react";
+import React, { FunctionComponent, ReactNode } from "react";
 import styles from "../../styles/button.module.css";
 
 type ButtonProps = {
   onClick: () => void;
-  children: string;
+  children: string | ReactNode;
   size?: string;
 };
 
