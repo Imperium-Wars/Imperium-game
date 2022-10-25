@@ -9,6 +9,8 @@ import { TerritoryKey } from "../components/Territories/territoriesData";
 import TerritoriesData from "../components/Territories/territoriesData";
 import ScreenRotationIcon from "@mui/icons-material/ScreenRotation";
 import MusicPlayer from "../components/UI/musicPlayer";
+import { useAccount } from "@starknet-react/core";
+import { useRouter } from "next/router";
 
 export type Music = {
   song?: HTMLAudioElement;

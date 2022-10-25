@@ -211,9 +211,10 @@ const territoriesData: TerritoriesData = {
     type: "Forest",
   },
   Indonesia: {
-    apogee: "1489 - 1914",
+    apogee: "600 - 700",
     continent: "Oceania",
-    history: "",
+    history:
+      "Native Indonesians had a very developed army. They launched various long and thorough expeditions through and around the land to expand their territory. They had a strategic mindset for that purpose and already organized their troops at the time with different military grades, such as senāpati (general), cātabhata (soldier), puhāvam (ship captain) and vāsīkarana (blacksmith/weapon maker).",
     isAtWar: false,
     name: "Indonesia",
     type: "Forest",
@@ -282,9 +283,10 @@ const territoriesData: TerritoriesData = {
     type: "Mountain",
   },
   "New Guinea": {
-    apogee: "1489 - 1914",
+    apogee: "1770 - 1800",
     continent: "Oceania",
-    history: "",
+    history:
+      "New Guinea aborigenal tribes were determined and courageous defenders of their lands. Especially one eastern clan led by Sultan Nuku, one of the most famous Tidore sultans who rebelled against Dutch colonization. He commanded loyalty from both Moluccan and Papuan chiefs, mainly those of Raja Ampat Islands, from his base in Gebe.",
     isAtWar: false,
     name: "New Guinea",
     type: "Forest",

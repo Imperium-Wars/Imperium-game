@@ -1,0 +1,94 @@
+.empireContainer {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-image: url("/backgrounds/woodBackground.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card {
+  border-radius: 10px;
+  margin: 1rem;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.blackFilter {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #000000;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.chineseEmpire,
+.frenchEmpire,
+.americanEmpire,
+.ottomanEmpire,
+.titleContainer {
+  position: relative;
+  margin-top: 1rem;
+  box-shadow: 0px 0px 32px 1px hsla(24, 60%, 5%, 0.494);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 10px 50px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #c8aa6d, #7a5c29);
+  border-image-slice: 1;
+  border-width: 2px;
+  font-family: "CaslonNormal";
+  text-align: center;
+  margin-bottom: 2rem;
+  z-index: 0;
+}
+
+.chineseEmpire {
+  background-color: #1e2328;
+}
+
+.frenchEmpire {
+  background-color: #1e2328;
+}
+
+.ottomanEmpire {
+  background-color: #1e2328;
+}
+
+.americanEmpire {
+  background-color: #1e2328;
+}
+
+.homeTitle {
+  font-family: "CaslonBold";
+  font-size: 5rem;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  color: blanchedalmond;
+  z-index: 1;
+}
+
+@media (max-width: 640px) {
+  .homeTitle {
+    font-size: 3.5rem;
+    line-height: 1;
+  }
+}
