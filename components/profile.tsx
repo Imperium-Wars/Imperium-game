@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { FunctionComponent } from "react";
 import styles from "../styles/profile.module.css";
 
