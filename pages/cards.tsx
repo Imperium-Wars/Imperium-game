@@ -24,6 +24,7 @@ const Cards: NextPage = () => {
           <h1 className={styles.homeTitle}>French Empire</h1>
         </div>
         <div className={styles.cardsContainer}>
+          <div className={`${styles.cardAnimated} ${styles.Napoleon}`}></div>
           <img
             className={styles.card}
             height={350}

@@ -57,6 +57,7 @@
 .menu_title {
   text-align: center;
   color: blanchedalmond;
+  font-size: 1.9rem;
 }
 
 @media (max-width: 820px) {

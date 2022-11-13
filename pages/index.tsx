@@ -17,7 +17,7 @@ const Home: NextPage = () => {
     if (!isConnected) {
       available.length === 1 ? connect(available[0]) : setHasWallet(true);
     } else {
-      router.push("/explore");
+      router.push("/keymint");
     }
   }, [isConnected]);
 
