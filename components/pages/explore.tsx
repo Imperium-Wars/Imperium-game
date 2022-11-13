@@ -1,16 +1,14 @@
 import type { NextPage } from "next";
-import Map from "../components/mapFiver";
+import Map from "../mapFiver";
 import styles from "../styles/map.module.css";
-import Territory from "../components/Territories/territory";
-import MobileTerritory from "../components/Territories/mobileTerritory";
+import Territory from "../Territories/territory";
+import MobileTerritory from "../Territories/mobileTerritory";
 import { useMediaQuery } from "@mui/material";
 import { useEffect, useState } from "react";
-import { TerritoryKey } from "../components/Territories/territoriesData";
-import TerritoriesData from "../components/Territories/territoriesData";
+import { TerritoryKey } from "../Territories/territoriesData";
+import TerritoriesData from "../Territories/territoriesData";
 import ScreenRotationIcon from "@mui/icons-material/ScreenRotation";
-import MusicPlayer from "../components/UI/musicPlayer";
-import { useAccount } from "@starknet-react/core";
-import { useRouter } from "next/router";
+import MusicPlayer from "../UI/musicPlayer";
 
 export type Music = {
   song?: HTMLAudioElement;

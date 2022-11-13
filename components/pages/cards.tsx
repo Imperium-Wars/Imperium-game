@@ -2,7 +2,7 @@
 import type { NextPage } from "next";
 import styles from "../styles/cards.module.css";
 import { useEffect, useState } from "react";
-import MusicPlayer from "../components/UI/musicPlayer";
+import MusicPlayer from "../UI/musicPlayer";
 import { Music } from "./explore";
 
 const Cards: NextPage = () => {
