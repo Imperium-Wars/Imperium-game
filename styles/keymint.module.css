@@ -5,7 +5,7 @@
   align-items: center;
   min-height: 100vh;
   max-height: 100vh;
-  background-image: url("/backgrounds/woodBackground.webp");
+  background-image: url("/backgrounds/Austerlitz.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -31,6 +31,7 @@
   text-transform: uppercase;
   color: blanchedalmond;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 640px) {

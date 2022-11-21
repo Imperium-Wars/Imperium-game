@@ -29,6 +29,7 @@
   font-weight: 700;
   text-transform: uppercase;
   color: blanchedalmond;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 640px) {
