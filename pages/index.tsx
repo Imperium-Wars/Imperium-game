@@ -38,7 +38,7 @@ const Home: NextPage = () => {
                 : () => setHasWallet(true)
             }
           >
-            Explore the map
+            Launch Game
           </Button>
         </div>
       </div>

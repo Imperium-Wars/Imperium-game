@@ -71,7 +71,6 @@ const Cards: NextPage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.blackFilter}></div>
-
       {errorMessage ? (
         <div className={styles.main}>
           <h1 className={styles.homeTitle}>You are not whitelisted</h1>
