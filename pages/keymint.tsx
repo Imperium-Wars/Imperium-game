@@ -17,7 +17,7 @@ const Cards: NextPage = () => {
   const router = useRouter();
   const [hasWallet, setHasWallet] = useState<boolean>(false);
   const [isConnected, setIsConnected] = useState<boolean>(false);
-  const { status, account } = useAccount();
+  const { status, address } = useAccount();
   const { available, connect, disconnect } = useConnectors();
   const [errorMessage, setErrorMessage] = useState<string | undefined>();
   const [signature, setSignature] = useState<string[]>([]);
@@ -45,8 +45,8 @@ const Cards: NextPage = () => {
   }, [status]);
 
   useEffect(() => {
-    if (account) {
-      fetch(`http://localhost:3000/api/${hexToFelt(account.address)}`)
+    if (address) {
+      fetch(`/api/${hexToFelt(address)}`)
         .then((response) => response.json())
         .then((data) => {
           if (data.error) {
@@ -57,7 +57,7 @@ const Cards: NextPage = () => {
           }
         });
     }
-  }, [account]);
+  }, [address]);
 
   function disconnectByClick(): void {
     disconnect();
