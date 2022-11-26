@@ -58,7 +58,7 @@ const Wallets: FunctionComponent<WalletsProps> = ({
             return (
               <div key={connector.id()} className={styles.buttonWallet}>
                 <Button onClick={() => connectWallet(connector)} size="small">
-                  <div className="flex">
+                  <div className="flex justify-center w-52">
                     <WalletIcons id={connector.id()} />
                     {`Connect ${connector.name()}`}
                   </div>

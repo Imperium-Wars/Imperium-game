@@ -22,7 +22,8 @@
   background-color: #1e2328;
   font-family: "CaslonNormal";
   max-width: 500px;
-  height: 300px;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .buttonWallet {
@@ -42,7 +43,7 @@
   position: absolute;
   top: 12px;
   right: 12px;
-  width: 30px;
+  width: 20px;
   stroke: blanchedalmond;
   transition: 0.3s;
   background-color: transparent;
@@ -62,11 +63,6 @@
 
 @media (max-width: 820px) {
   .menu {
-    width: 90%;
-  }
-
-  .menu_title {
-    font-size: 19px;
-    margin: -7px -2px 2px;
+    width: 300px;
   }
 }

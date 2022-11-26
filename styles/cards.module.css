@@ -1,19 +1,35 @@
-.empireContainer {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.chineseCardsPage,
+.frenchCardsPage,
+.americanCardsPage,
+.ottomanCardsPage,
+.cardsPage {
   display: flex;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 100vw;
+  height: 100%;
   min-height: 100vh;
-  background-image: url("/backgrounds/woodBackground.webp");
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.chineseCardsPage {
+  background-image: url("/backgrounds/chineseIllustration.jpeg");
+}
+
+.frenchCardsPage {
+  background-image: url("/backgrounds/frenchIllustration.jpeg");
+}
+
+.ottomanCardsPage {
+  background-image: url("/backgrounds/ottomanIllustration.jpeg");
+}
+
+.americanCardsPage {
+  background-image: url("/backgrounds/americanIllustration.jpg");
 }
 
 .card {
@@ -25,6 +41,18 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  z-index: 0;
+}
+
+.blackFilter2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #000000;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  z-index: -1;
 }
 
 .blackFilter {
@@ -32,16 +60,17 @@
   top: 0;
   right: 0;
   background-color: #000000;
-  width: 100%;
-  height: 100%;
-  opacity: 0.4;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
   z-index: 0;
 }
 
-.chineseEmpire,
-.frenchEmpire,
-.americanEmpire,
-.ottomanEmpire,
+.chineseTitleContainer,
+.frenchTitleContainer,
+.americanTitleContainer,
+.ottomanTitleContainer,
 .titleContainer {
   position: relative;
   margin-top: 1rem;
@@ -56,39 +85,49 @@
   border-width: 2px;
   font-family: "CaslonNormal";
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   z-index: 0;
+  background-color: #1e2328;
+  width: 500px;
 }
 
-.chineseEmpire {
-  background-color: #1e2328;
+.chineseTitleContainer {
+  background-image: url("/flags/chinese.jpeg");
 }
 
-.frenchEmpire {
-  background-color: #1e2328;
+.frenchTitleContainer {
+  background-image: url("/flags/french.jpeg");
 }
 
-.ottomanEmpire {
-  background-color: #1e2328;
+.ottomanTitleContainer {
+  background-image: url("/flags/ottoman.jpeg");
 }
 
-.americanEmpire {
-  background-color: #1e2328;
+.americanTitleContainer {
+  background-image: url("/flags/american.webp");
 }
 
 .homeTitle {
   font-family: "CaslonBold";
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 700;
   margin: 0;
   text-transform: uppercase;
   color: blanchedalmond;
-  z-index: 1;
+  z-index: 1000;
 }
 
 @media (max-width: 640px) {
   .homeTitle {
-    font-size: 3.5rem;
+    font-size: 2rem;
     line-height: 1;
+  }
+
+  .chineseTitleContainer,
+  .frenchTitleContainer,
+  .americanTitleContainer,
+  .ottomanTitleContainer,
+  .titleContainer {
+    width: 250px;
   }
 }

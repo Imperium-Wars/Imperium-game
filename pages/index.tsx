@@ -31,15 +31,22 @@ const Home: NextPage = () => {
       <div className={styles.main}>
         <div className="centerContainer">
           <h1 className={styles.homeTitle}>Imperium Wars</h1>
-          <Button
-            onClick={
-              isConnected
-                ? () => router.push("/explore")
-                : () => setHasWallet(true)
-            }
-          >
-            Launch Game
-          </Button>
+          <div className="flex">
+            <div className="m-2 z-0">
+              <Button
+                onClick={
+                  isConnected
+                    ? () => router.push("/explore")
+                    : () => setHasWallet(true)
+                }
+              >
+                Mint key
+              </Button>
+            </div>
+            <div className="m-2 z-0">
+              <Button onClick={() => router.push("/empire")}>See Cards</Button>
+            </div>
+          </div>
         </div>
       </div>
       <Wallets closeWallet={() => setHasWallet(false)} hasWallet={hasWallet} />

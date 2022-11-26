@@ -13,6 +13,7 @@
   border-width: 2px;
   z-index: 0;
   text-align: center;
+  width: 100%;
 }
 
 .buttonSmall:hover,
@@ -32,5 +33,4 @@
 
 .buttonSmall {
   font-size: 1.5rem;
-  width: 300px;
 }

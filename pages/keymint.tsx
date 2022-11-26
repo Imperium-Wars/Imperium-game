@@ -74,7 +74,9 @@ const Cards: NextPage = () => {
       {errorMessage ? (
         <div className={styles.main}>
           <h1 className={styles.homeTitle}>You are not whitelisted</h1>
-          <Button onClick={disconnectByClick}>Try another account</Button>
+          <div>
+            <Button onClick={disconnectByClick}>Try another account</Button>
+          </div>
         </div>
       ) : (
         <div className={styles.main}>
