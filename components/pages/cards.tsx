@@ -3,7 +3,7 @@ import type { NextPage } from "next";
 import styles from "../styles/cards.module.css";
 import { useEffect, useState } from "react";
 import MusicPlayer from "../UI/musicPlayer";
-import { Music } from "./explore";
+import { Music } from "../../pages/explore";
 
 const Cards: NextPage = () => {
   const [music, setMusic] = useState<Music | undefined>(undefined);
