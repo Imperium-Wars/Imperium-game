@@ -27,7 +27,6 @@ const Home: NextPage = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.blackFilter}></div>
       <div className={styles.main}>
         <div className="centerContainer">
           <h1 className={styles.homeTitle}>Imperium Wars</h1>

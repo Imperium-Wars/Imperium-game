@@ -1,19 +1,16 @@
 import type { NextPage } from "next";
 import { useRouter } from "next/router";
-import { useEffect } from "react";
 import styles from "../styles/index.module.css";
 import styles2 from "../styles/cards.module.css";
-import { useAccount } from "@starknet-react/core";
 import { EmpireType } from "./empire/[empire]";
+import Button from "../components/UI/button";
 
 const Empire: NextPage = () => {
   const router = useRouter();
-  const { status } = useAccount();
   const empires: EmpireType[] = ["american", "chinese", "french", "ottoman"];
 
   return (
     <div className={styles.container}>
-      <div className={styles.blackFilter}></div>
       <div className={styles.main}>
         <div className="flex flex-wrap justify-center">
           {empires.map((empire, index) => (
@@ -26,6 +23,11 @@ const Empire: NextPage = () => {
               <h1 className={styles2.homeTitle}>{empire} Empire</h1>
             </div>
           ))}
+        </div>
+        <div className="mt-4 z-0">
+          <Button size="small" onClick={() => router.push("/")}>
+            Go back
+          </Button>
         </div>
       </div>
     </div>

@@ -51,7 +51,7 @@ const EmpireCards: NextPage<EmpireCardsProps> = ({ empire }) => {
           alt={`${empire} marshall`}
         />
       </div>
-      <div className="mt-4">
+      <div className="mt-4 mb-4">
         <Button size="small" onClick={() => router.push("/empire")}>
           Go back
         </Button>

@@ -17,19 +17,19 @@
 }
 
 .chineseCardsPage {
-  background-image: url("/backgrounds/chineseIllustration.jpeg");
+  background-image: url("/backgrounds/chineseIllustrationBlack.webp");
 }
 
 .frenchCardsPage {
-  background-image: url("/backgrounds/frenchIllustration.jpeg");
+  background-image: url("/backgrounds/frenchIllustrationBlack.webp");
 }
 
 .ottomanCardsPage {
-  background-image: url("/backgrounds/ottomanIllustration.jpeg");
+  background-image: url("/backgrounds/ottomanIllustrationBlack.webp");
 }
 
 .americanCardsPage {
-  background-image: url("/backgrounds/americanIllustration.jpg");
+  background-image: url("/backgrounds/americanIllustrationBlack.webp");
 }
 
 .card {
