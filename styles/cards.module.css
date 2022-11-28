@@ -17,11 +17,11 @@
 }
 
 .chineseCardsPage {
-  background-image: url("/backgrounds/chineseIllustrationBlack.webp");
+  background-image: url("/backgrounds/ottomanIllustrationBlack.webp");
 }
 
 .frenchCardsPage {
-  background-image: url("/backgrounds/frenchIllustrationBlack.webp");
+  background-image: url("/backgrounds/ottomanIllustrationBlack.webp");
 }
 
 .ottomanCardsPage {
@@ -29,7 +29,7 @@
 }
 
 .americanCardsPage {
-  background-image: url("/backgrounds/americanIllustrationBlack.webp");
+  background-image: url("/backgrounds/ottomanIllustrationBlack.webp");
 }
 
 .card {
