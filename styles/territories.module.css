@@ -105,6 +105,7 @@
 .mobileTerritoryImages {
   position: relative;
   width: 600px;
+  min-height: 230px;
   text-align: center;
 }
 
@@ -115,6 +116,8 @@
 }
 
 .mobileTerritoryImage {
+  position: absolute;
+  left: 60px;
   margin: 5px;
   margin-bottom: 10px;
 }
@@ -125,13 +128,16 @@
 }
 
 @media (max-width: 700px) {
-  .mobileTerritoryContainer {
-    flex-direction: column;
-    max-height: 600px;
+  .territoryModal {
+    max-width: 95%;
   }
 
-  .territoryModal {
-    max-width: 370px;
+  .mobileTerritoryContent {
+    max-width: 100%;
+  }
+  .mobileTerritoryImages {
+    visibility: hidden;
+    width: 0;
   }
 
   .mobileTerritoryCadre {
